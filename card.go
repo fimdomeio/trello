@@ -72,6 +72,7 @@ type Card struct {
 	IDAttachmentCover     string        `json:"idAttachmentCover"`
 	ManualCoverAttachment bool          `json:"manualCoverAttachment"`
 	Attachments           []*Attachment `json:"attachments,omitempty"`
+	CustomFieldItems      []*CustomFieldItem `json:"customFieldItems,omitempty"`
 
 	// Labels
 	IDLabels []string `json:"idLabels,omitempty"`
